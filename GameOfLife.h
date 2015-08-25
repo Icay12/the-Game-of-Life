@@ -5,25 +5,25 @@
 
 enum status
 {
-	alive = 1,
-	dead = 0
+    alive = 1,
+    dead = 0
 };
 
-class GameMap
+class GameOfLife
 {
 public:
-	explicit GameMap();
-	~GameMap(){};
-	GameMap(int size);
-	GameMap(const GameMap &);
-	void addResident(int row, int col);
-	status isAlive(int row, int col);
-	void nextGeneration();
-	int aliveNeighbour(int row, int col);
+    explicit GameOfLife();
+    ~GameOfLife(){};
+    GameOfLife(int size);
+    GameOfLife(const GameOfLife &);
+    void addResident(int row, int col);
+    status isAlive(int row, int col);
+    void nextGeneration();
+    int aliveNeighbour(int row, int col);
 
 private:
-	int MapSize=8;			//the default size is 8*8
-	status Map[MAXLEGTH][MAXLEGTH];
+    int m_MapSize=8;			//the default size is 8*8
+    status m_Map[MAXLEGTH][MAXLEGTH];
 };
 
 

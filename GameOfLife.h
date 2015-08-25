@@ -17,7 +17,7 @@ public:
 	GameMap(int size);
 	GameMap(const GameMap &);
 	void addResident(int row, int col);
-	status getStatus(int row, int col);
+	status isAlive(int row, int col);
 	void nextGeneration();
 	int aliveNeighbour(int row, int col);
 

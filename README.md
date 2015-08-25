@@ -3,10 +3,8 @@
 
 **This project is designed to complish the Game of Life.**
 the structure is as follows:
-file name | function
-----------|----------
-GameOfLife.h | declaration for class GameOfLife
-GameOfLife.cpp | definition for class GameOfLife
-UT_GameOfLife.cpp | Unit Test file(under CPPUtest framework)
-AllTests.cpp | main function for UT
-Makefile | makefile
+* GameOfLife.h : declaration for class GameOfLife
+* GameOfLife.cpp : definition for class GameOfLife
+* UT_GameOfLife.cpp : Unit Test file(under CPPUtest framework)
+* AllTests.cpp : main function for UT
+* Makefile : makefile

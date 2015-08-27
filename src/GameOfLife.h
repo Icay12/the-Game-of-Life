@@ -13,7 +13,7 @@ class GameOfLife
 {
 public:
     explicit GameOfLife();
-    ~GameOfLife(){};
+    ~GameOfLife(){}
     GameOfLife(int size);
     GameOfLife(const GameOfLife &);
     void addResident(int row, int col);

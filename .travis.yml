@@ -12,8 +12,10 @@ install:
 - git submodule update
 - cd cpputest
 - mkdir ./lib
-- export LD_LIBRARY_PATH=./lib
+- export CPPUTEST_BUILD_DIR=$TRAVIS_BUILD_DIR/lib
+- mkdir -p $CPPUTEST_BUILD_DIR && cd $CPPUTEST_BUILD_DIR
 - cmake CMakeLists.txt
 - make
+- cp $CPPUTEST_BUILD_DIR ./lib
 
 script: cd ../test/; make

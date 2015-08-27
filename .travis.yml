@@ -6,14 +6,12 @@ compiler:
 
 env: 
   matrix: 
-  - BUILDTOOL=autotools
   - BUILDTOOL=cmake
-  - BUILDTOOL=autotools_old_compilers
 
 install: 
-
 - git submodule update
 - cd cpputest
+- mkdir ./lib
 - export LD_LIBRARY_PATH=./lib
 - cmake CMakeLists.txt
 - make

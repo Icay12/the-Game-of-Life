@@ -8,7 +8,7 @@ COMPONENT_NAME = GameOfLife
 PROJECT_HOME_DIR = ..
 CPPUTEST_HOME = $(PROJECT_HOME_DIR)/cpputest
 
-SRC_FILES = $(PROJECT_HOME_DIR)/GameOfLife.cpp
+SRC_FILES = $(PROJECT_HOME_DIR)/src/GameOfLife.cpp
 
 TEST_SRC_FILES = AllTests.cpp UT_GameOfLife.cpp
 

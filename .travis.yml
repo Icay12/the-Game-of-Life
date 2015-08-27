@@ -15,6 +15,6 @@ install:
 - cd cpputest
 - cmake CMakeLists.txt
 - make
-- cp -r usr/local/lib ./
+- cp -r /usr/local/lib ./
 
 script: cd ../test/; make

@@ -13,6 +13,7 @@ env:
 install: 
 - git submodule update
 - cd cpputest
-- cmake CMakeList.txt
+- cmake CMakeLists.txt
 - make
-script: cd test/; make
+
+script: cd ../test/; make

@@ -2,4 +2,11 @@ language: cpp
 compiler:
     - g++ -std=c++11
 
-script: cd test/; make
+script: 
+    cd cpputest/;
+    cmake CMakeList.txt;
+    make;
+    cd ../test/;
+    make
+    
+    

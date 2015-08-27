@@ -4,7 +4,10 @@ compiler:
     - clang
 
 script: 
-    cd test/;
+    cd cpputest/;
+    cmake CMakeList.txt;
+    make;
+    cd ../test/;
     make
     
     

@@ -21,8 +21,6 @@ INCLUDE_DIRS =\
 #CPPUTEST_WARNINGFLAGS = -Wall -Werror -Wswitch-default -Wfatal-errors
 #CPPUTEST_CXXFLAGS = -std=c++11
 #CPPUTEST_CFLAGS = -std=c99
-
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
-
 $(CPPUTEST_LIB):
-        cd $(CPPUTEST_HOME);make -f Makefile_using_MakefileWorker
+	cd $(CPPUTEST_HOME);make -f Makefile_using_MakefileWorker

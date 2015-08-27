@@ -1,13 +1,18 @@
+--- 
 language: cpp
-compiler:
-    - gcc
-    - clang
+compiler: 
+- clang
+- gcc
 
-script: 
-    cd cpputest/;
-    cmake CMakeList.txt;
-    make;
-    cd ../test/;
-    make
-    
-    
+env: 
+  matrix: 
+  - BUILDTOOL=autotools
+  - BUILDTOOL=cmake
+  - BUILDTOOL=autotools_old_compilers
+
+install: 
+- git submodule update
+- cd cpputest
+- cmake CMakeList.txt
+- make
+script: cd test/; make

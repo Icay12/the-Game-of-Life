@@ -16,6 +16,5 @@ install:
 - cmake CMakeLists.txt
 - make
 - cp -r /usr/local/lib ./
-- cp -r /usr/local/include/CppUTest ./include
-- cp -r /usr/local/include/CppUTestExt ./include
+
 script: cd ../test/; make

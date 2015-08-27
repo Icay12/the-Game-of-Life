@@ -23,3 +23,6 @@ INCLUDE_DIRS =\
 #CPPUTEST_CFLAGS = -std=c99
 
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
+
+$(CPPUTEST_LIB):
+        cd $(CPPUTEST_HOME);make -f Makefile_using_MakefileWorker

@@ -11,11 +11,11 @@ env:
   - BUILDTOOL=autotools_old_compilers
 
 install: 
+
 - git submodule update
 - cd cpputest
+- export LD_LIBRARY_PATH=./lib
 - cmake CMakeLists.txt
 - make
-- mkdir lib
-- cp -r /usr/local/lib ./lib
 
 script: cd ../test/; make

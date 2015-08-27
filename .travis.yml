@@ -1,6 +1,5 @@
 language: cpp
 compiler:
-    - gcc
-    - clang
+    - c++11
 
 script: cd test/; make

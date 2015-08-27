@@ -11,13 +11,8 @@ env:
 install: 
 - git submodule update
 - cd cpputest
-- mkdir ./lib
-- mkdir ./CppUTest
-- mkdir ./CppUTestEXT
+- cmake -DCMAKE_INSTALL_PREFIX = ./
 - cmake CMakeLists.txt
 - make
-- cp $TRAVIS_BUILD_DIR/lib ./lib
-- cp $TRAVIS_BUILD_DIR/include/CppUTest ./CppUTest
-- cp $TRAVIS_BUILD_DIR/include/CppUTestEXT ./CppUTestEXT
 
 script: cd ../test/; make

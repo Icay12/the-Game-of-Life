@@ -22,7 +22,7 @@ public:
     int aliveNeighbour(int row, int col);
 
 private:
-    int m_MapSize=8;			//the default size is 8*8
+    int m_MapSize;
     status m_Map[MAXLEGTH][MAXLEGTH];
 };
 

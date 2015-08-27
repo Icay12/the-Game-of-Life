@@ -4,6 +4,7 @@
 GameOfLife::GameOfLife()
 {
     int row,col;
+    m_MapSize = 8;
     for ( row = 0; row < this->m_MapSize; ++row)
     {
         for (col = 0; col < this->m_MapSize; ++col)
